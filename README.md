@@ -1,5 +1,5 @@
 # CNN ClassicModels
-        * AlexNet
-        * VGGNet
-        * Google Inception Net
-        * ResNet
+* AlexNet
+* VGGNet
+* Google Inception Net
+* ResNet
