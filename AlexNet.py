@@ -35,9 +35,9 @@ def inference(images):
         print_activations(conv1)
         parameters += [kernel, biases]
         # LRN层，添加之后效果并不明显，可以不使用
-        lrn1 =tf.nn.lrn(conv1, 4, bias=1.0, alpha=0.001/9, beta=0.75, name='lrn1')
+        # lrn1 =tf.nn.lrn(conv1, 4, bias=1.0, alpha=0.001/9, beta=0.75, name='lrn1')
         # 最大池化层
-        pool1 = tf.nn.max_pool(lrn1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID', name='pool1')
+        pool1 = tf.nn.max_pool(conv1, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID', name='pool1')
         print_activations(pool1)
 
     # 第二层卷积
@@ -56,8 +56,8 @@ def inference(images):
         conv2 = tf.nn.relu(bias, name=scope)
         parameters += [kernel, biases]
         print_activations(conv2)
-        lrn2 = tf.nn.lrn(conv2, 4, bias=1.0, alpha=0.001/9, beta=0.75, name='lrn2')
-        pool2 = tf.nn.max_pool(lrn2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID', name='pool2')
+        # lrn2 = tf.nn.lrn(conv2, 4, bias=1.0, alpha=0.001/9, beta=0.75, name='lrn2')
+        pool2 = tf.nn.max_pool(conv2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='VALID', name='pool2')
         print_activations(pool2)
 
     # 第三层卷积
