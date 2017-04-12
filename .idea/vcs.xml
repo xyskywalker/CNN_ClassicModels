@@ -3,6 +3,10 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../DQN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../DSB3Tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../LIDC" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../RNN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TCM_AI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TensorBox" vcs="Git" />
   </component>
 </project>

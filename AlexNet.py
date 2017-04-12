@@ -12,7 +12,7 @@ num_batches = 100
 
 # 显示网络每一层结构的函数，输出名称和尺寸
 def print_activations(t):
-    print t.op.name, ' ', t.get_shape().as_list()
+    print(t.op.name, ' ', t.get_shape().as_list())
 
 
 def inference(images):
